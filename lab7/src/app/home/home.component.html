@@ -1,0 +1,8 @@
+<p *ngIf="cards.length==0; else nullCard" > курсов нет</p>
+<ng-template #nullCard>
+    <app-card *ngFor="let card of cards" 
+    picture={{card.picture}} 
+    title={{card.title}} 
+    CardDiscription={{card.cardDiscription}} > курсу ⏺
+    </app-card>
+</ng-template>
