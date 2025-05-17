@@ -1,0 +1,74 @@
+.chat-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chat-box {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.comment {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.input-box .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched {
+  border-color: red;
+}

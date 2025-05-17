@@ -1,0 +1,13 @@
+<div class="card">
+    <img [src]="picture"  class="card-image">
+    <div class="card-content">
+        <h2 class="card-title"> {{title}}</h2>
+        <p class="card-description">{{CardDiscription}}</p>
+        <a href="#" class="card-button">
+            Перейти к 
+            <ng-content></ng-content>
+        </a>
+        
+        <!-- <a href="#" class="card-button">Узнать больше</a> -->
+    </div>
+</div>

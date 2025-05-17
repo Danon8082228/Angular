@@ -1,0 +1,11 @@
+<ul>
+    <li><span>Валюта: </span>{{currency | currency}}</li>
+    <li><span>Проценты: </span>{{percent | percent}} </li>
+    <li><span>Верхний регистр: </span>{{uppercase | uppercase}}</li>
+    <li><span>Нижний регистр: </span>{{ lowercase | lowercase }}</li>
+    <li><span>Дата: </span>{{date | date}}</li>
+    <li><span>Формат числа: </span>{{num | number: "0.1-7"}}</li>
+    <li><span>Обрез строки: </span>{{strToSlice | slice: 0:4}}</li>
+    <li><span>Цепочки pipes: </span>{{uppercase | slice: 5:11 | uppercase}}</li>
+    <li><span>Собственный pipe: </span>{{space | point}}</li>
+</ul>

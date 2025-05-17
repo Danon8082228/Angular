@@ -1,0 +1,22 @@
+<h2>Добавить новый объект</h2>
+<form [formGroup]="form" (ngSubmit)="addItem()">
+  <label>
+    Имя:
+    <input formControlName="name" placeholder="Введите имя" />
+  </label>
+  <label>
+    Данные:
+    <input formControlName="data" placeholder="Введите данные" />
+  </label>
+  <button type="submit" [disabled]="form.invalid">Добавить</button>
+</form>
+
+<hr/>
+
+<h2>Список объектов</h2>
+<ul>
+  <li *ngFor="let item of items">
+    {{ item.name }} - {{ item.data }}
+    <button (click)="deleteItem(item.id!)">Удалить</button>
+  </li>
+</ul>
